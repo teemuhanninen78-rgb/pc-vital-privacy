@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PC Vital – Privacy Policy</title>
+<style>
+:root{color-scheme:light dark;--bg:#fff;--fg:#1b1b1b;--muted:#5d5d5d;--accent:#005fb8}
+@media (prefers-color-scheme:dark){:root{--bg:#202020;--fg:#fff;--muted:#cfcfcf;--accent:#60cdff}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 "Segoe UI",system-ui,sans-serif}
+main{max-width:720px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:28px;line-height:1.3;margin:8px 0 4px}
+h2{font-size:21px;margin:32px 0 8px}
+h3{font-size:17px;margin:24px 0 4px}
+p,li{overflow-wrap:anywhere}
+a{color:var(--accent)}
+.lang{text-align:right;font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+<p class="lang"><a href="../" hreflang="fi">Suomeksi</a></p>
+<h1>PC Vital – Privacy Policy</h1>
+<p>Updated 24 November 2026</p>
+<p>This policy covers the Windows app PC Vital. In the Finnish version, the app is still called Koneen tila.</p>
+<h2>In short</h2>
+<p>PC Vital does not send information about you to the publisher. The app has no user account, no ads, no usage analytics and no crash reporting of its own. Measurements and history are stored only on this PC.</p>
+<p>The app connects to the internet only in the situations listed below. Most of them start only when you press a button. Without a button press, the app connects only to check for program updates and, after you have started monitoring, for the connection quality log.</p>
+<h2>When the app uses the internet</h2>
+<p>Requests to Cloudflare and Have I Been Pwned include the app&#39;s name and version (KoneenTila/1.2). They contain no information about you.</p>
+<h3>Speed test</h3>
+<p>Recipient: Cloudflare, Inc., server speed.cloudflare.com.</p>
+<p>The test starts only when you press the speed test button on the Network page or the Overview page, and the app asks for permission before every test. The test downloads and uploads test data to a Cloudflare server. On a fast connection it transfers about 0.7 GB. Cloudflare sees your IP address, as does every server your PC connects to. The result is not sent to Cloudflare or anywhere else. It is stored only on this PC.</p>
+<p>Cloudflare privacy policy: <a href="https://www.cloudflare.com/privacypolicy/">https://www.cloudflare.com/privacypolicy/</a></p>
+<h3>Password leak check</h3>
+<p>Recipient: the Have I Been Pwned service, owned and operated by Superlative Enterprises Pty Ltd (Australia), server api.pwnedpasswords.com. The service uses Cloudflare, so Cloudflare also sees the request.</p>
+<p>When you type a password on the Security page and check it, the app calculates a hash (SHA-1) of the password. Only the first five characters of the hash are sent to the service. The service returns a list of hashes, and the comparison is done on this PC. The password and the full hash are never sent or stored. The service pads its answer with random lines, so the size of the answer does not reveal the result.</p>
+<p>Have I Been Pwned privacy policy: <a href="https://haveibeenpwned.com/Privacy">https://haveibeenpwned.com/Privacy</a></p>
+<h3>Connection quality log</h3>
+<p>Recipient: your network&#39;s default gateway, usually your own router (on a VPN it can be the VPN service&#39;s gateway), and Cloudflare, Inc., address 1.1.1.1.</p>
+<p>The log runs only if you start monitoring on the Network page. After that, the app pings the gateway and 1.1.1.1 every ten seconds whenever the app is running, until you stop monitoring. A ping is a small echo request that contains only fixed padding and no information about you or your PC. Cloudflare sees the IP address the ping comes from. It uses about 3 MB of data a day. The time, the response times and whether the PC was on Wi-Fi are stored on this PC. When the connection is set as metered, monitoring pauses and resumes by itself when the connection is no longer metered.</p>
+<h3>Checking for program updates</h3>
+<p>Recipient: Microsoft Corporation, the Windows Package Manager (winget) catalog at cdn.winget.microsoft.com. The app uses only this one winget source.</p>
+<p>When you open the Optimize PC page, the app asks winget to fetch the latest program versions from the catalog. The catalog is compared with the programs installed on this PC, on this PC. During the trial and in the full version, the same check also runs in the background at most once a day, no earlier than five minutes after the app starts, and you are notified about new versions. The background check is on by default. You can turn it off in Settings with the Check for program updates in the background switch. The switch affects only the background check: the Optimize PC page still fetches the catalog when it opens, even when the switch is off. The background check also does not run when notifications are turned off. On a metered connection the catalog is not fetched without your permission, and the background check does not run.</p>
+<p>winget is a Microsoft program and may send its own diagnostic data to Microsoft according to your Windows diagnostic data settings and winget&#39;s own setting. The Microsoft Privacy Statement applies to it.</p>
+<h3>Updating a program</h3>
+<p>Recipient: the publisher of the program being updated. The download address is in the program&#39;s entry in the winget catalog. For example, a Git update is downloaded from GitHub.</p>
+<p>A program is updated only when you choose it and confirm the update. winget then downloads the new version from the publisher&#39;s server and installs it.</p>
+<h3>Driver update check</h3>
+<p>Recipient: Microsoft Corporation, Windows Update. If your PC is managed by an organization, the search may go to the organization&#39;s own update server.</p>
+<p>When you check drivers on the Drivers page or run a health check, the app asks Windows Update to look for available drivers. Windows Update runs the search just like a search started from Windows Settings. The app does not install drivers.</p>
+<h3>Virus scan</h3>
+<p>Recipient: the app sends nothing. The scan is done by Microsoft Defender, whose cloud services work according to your Windows Security settings.</p>
+<p>The app only starts a Windows Security quick scan and reads its result.</p>
+<h3>Purchase and trial in the Microsoft Store</h3>
+<p>Recipient: Microsoft Corporation, Microsoft Store.</p>
+<p>Purchases, the trial period and license checks are handled by the Microsoft Store. Microsoft processes the payment and your account details. The publisher does not see your name, email address or payment details. In Partner Center, Microsoft gives the publisher aggregated figures such as numbers of installs and crashes. When the app crashes, Windows may send an error report to Microsoft according to your Windows diagnostic data settings. How this information is handled is explained in the Microsoft Privacy Statement.</p>
+<p>Microsoft Privacy Statement: <a href="https://privacy.microsoft.com/">https://privacy.microsoft.com/</a></p>
+<h3>Links</h3>
+<p>Recipient: whoever runs the page that opens, for example Microsoft, Google or Mozilla.</p>
+<p>Some buttons open Windows settings or help pages on the web. Web pages open in your browser, and the website&#39;s own privacy policy applies.</p>
+<h2>What the app stores on this PC</h2>
+<p>The files are in the folder %LocalAppData%\KoneenTila. In the version installed from the Microsoft Store, Windows keeps them in the app&#39;s own folder and deletes them when you uninstall the app.</p>
+<p>The history folder contains:</p>
+<ul>
+<li>per-minute monitoring: processor load and speed, temperature, battery charge and charging, free disk space, and the name of the program that used the most processor time</li>
+<li>events such as app start, slowdowns and plugging in the charger</li>
+<li>battery capacity and charge cycle count once a day, and the sizes and paths of large folders</li>
+<li>Optimize PC measurements from the last 30 sign-ins: the sign-in time and the names of programs started after sign-in with the processor time they used</li>
+<li>results of the health check, speed test, performance tests, Cooler PC page and Prepare PC for sale</li>
+<li>the connection quality log, if you have started monitoring.</li>
+</ul>
+<p>Daily files and folder sizes are deleted after 30 days. Battery history, all performance test results, Optimize PC measurements and the latest results of other features are kept until you clear the history.</p>
+<p>Outside the history folder:</p>
+<ul>
+<li>asetukset.json: the app&#39;s settings</li>
+<li>virheet.log: the app&#39;s own error messages. User name, computer name and profile folder path are masked. The file starts over when it grows beyond one megabyte.</li>
+<li>akkuraportti.xml: the Windows battery report, which contains the computer name and model and when the PC was in use, asleep or charging</li>
+<li>ohjelmapaivitykset-ilmoitettu.txt: programs and versions you have already been notified about.</li>
+</ul>
+<p>The performance test and some measurements also use temporary files that are deleted right after use. If you turn on Start with Windows, the setting is stored in Windows startup settings.</p>
+<h2>Deleting your data</h2>
+<p>The Clear monitoring history button on the Settings page deletes the whole history folder. Settings, the error log, the battery report and the list of notified updates are kept. In the version installed from the Microsoft Store, they are deleted when you uninstall the app.</p>
+<p>If you create a report in the app, it is saved only in the folder you choose, or on the clipboard if you copy it. The same applies to the outage report you can export from the Network page. A report leaves your PC only if you send it yourself.</p>
+<h2>Changes and contact</h2>
+<p>If a new feature uses the internet or stores new information, this policy is updated before the feature is released. The update date is at the top of this policy.</p>
+<p>The publisher&#39;s contact details are on the app&#39;s Microsoft Store page.</p>
+</main>
+</body>
+</html>
